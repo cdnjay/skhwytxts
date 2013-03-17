@@ -6,4 +6,4 @@ You will also need to find your highways RSS feed from Saskatchewan Highways usi
 
 http://hotline.gov.sk.ca/atom/en.html
 
-This script was tested on Ubuntu Server 12.04 and requires a LAMP server setup.
+This script was tested on Ubuntu Server 12.04 and requires a LAMP server setup. Take a look at the code for guidance on how to design your database. phpMyAdmin is a great tool for this. You can select any entry node in the RSS file with this but SK Highways only guarantees there will ever be 1 entry node per file.
