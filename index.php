@@ -50,7 +50,7 @@ foreach ($feed->{'entry'}[0]->{'content'}->children('xhtml', true)->{'div'}->{'d
 		case "Trav":
 			if (checkstatus() == 0) {
 				// Tell User
-				shell_exec('/usr/bin/curl -X POST https://api.twilio.com/2010-04-01/Accounts/{AccountSid}/SMS/Messages -d "To=+1306#######" -d "From=+1306#######" -d "Body=Custom Txt Message" -u {AccountSid}:{AuthToken}');
+				shell_exec('/usr/bin/curl -X POST https://api.twilio.com/2010-04-01/Accounts/{AccountSid}/SMS/Messages -d "To=+1306#######" -d "From=+1306#######" -d "Body=Hwy Travel Not Recommended" -u {AccountSid}:{AuthToken}');
 				// Update database row
 				updatestatus(1);
 			}
@@ -58,7 +58,7 @@ foreach ($feed->{'entry'}[0]->{'content'}->children('xhtml', true)->{'div'}->{'d
 		case "Road":
 			if (checkstatus() == 0) {
 				// Tell User
-				shell_exec('/usr/bin/curl -X POST https://api.twilio.com/2010-04-01/Accounts/{AccountSid}/SMS/Messages -d "To=+1306#######" -d "From=+1306#######" -d "Body=Custom Txt Message" -u {AccountSid}:{AuthToken}');
+				shell_exec('/usr/bin/curl -X POST https://api.twilio.com/2010-04-01/Accounts/{AccountSid}/SMS/Messages -d "To=+1306#######" -d "From=+1306#######" -d "Body=Hwy Closed" -u {AccountSid}:{AuthToken}');
 				// Update database row
 				updatestatus(1);
 			}
@@ -66,7 +66,7 @@ foreach ($feed->{'entry'}[0]->{'content'}->children('xhtml', true)->{'div'}->{'d
 		default:
 			if (checkstatus() == 1) {
 				// Tell User
-				shell_exec('/usr/bin/curl -X POST https://api.twilio.com/2010-04-01/Accounts/{AccountSid}/SMS/Messages -d "To=+1306#######" -d "From=+1306#######" -d "Body=Custom Txt Message" -u {AccountSid}:{AuthToken}');
+				shell_exec('/usr/bin/curl -X POST https://api.twilio.com/2010-04-01/Accounts/{AccountSid}/SMS/Messages -d "To=+1306#######" -d "From=+1306#######" -d "Body=Hwy Normal" -u {AccountSid}:{AuthToken}');
 				// Update database row
 				updatestatus(0);
 			}			
