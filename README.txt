@@ -2,6 +2,10 @@ This script as developed requires an AccountSid and AuthToken for Twilio to send
 
 https://www.twilio.com/try-twilio
 
+Future versions of this script may require Twilio's PHP library. You can download it here:
+
+https://www.twilio.com/docs/libraries
+
 You will also need to find your highways RSS feed from Saskatchewan Highways using this tool:
 
 http://hotline.gov.sk.ca/atom/en.html
