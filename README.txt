@@ -2,9 +2,13 @@ This script as developed requires an AccountSid and AuthToken for Twilio to send
 
 https://www.twilio.com/try-twilio
 
-Version 1.1 of this script requires Twilio's PHP library. If you prefer using cURL please select version 1.0. You can download the library here:
+Version 1.1 of this script requires Twilio's PHP library. You can download it here:
 
 https://www.twilio.com/docs/libraries
+
+If you prefer using cURL please select version 1.0. The latest version of the cURL executable can be downloaded here:
+
+http://curl.haxx.se/dlwiz/
 
 You will also need to find your highways RSS feed from Saskatchewan Highways using this tool:
 
