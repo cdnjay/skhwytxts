@@ -2,7 +2,7 @@ This script as developed requires an AccountSid and AuthToken for Twilio to send
 
 https://www.twilio.com/try-twilio
 
-Future versions of this script may require Twilio's PHP library. You can download it here:
+Version 1.1 of this script requires Twilio's PHP library. If you prefer using cURL please select version 1.0. You can download the library here:
 
 https://www.twilio.com/docs/libraries
 
@@ -12,4 +12,4 @@ http://hotline.gov.sk.ca/atom/en.html
 
 This script was tested on Ubuntu Server 12.04 and requires a LAMP server setup. Take a look at the code for guidance on how to design your database. phpMyAdmin is a great tool for this. You can select any entry node in the RSS file with this but SK Highways only guarantees there will ever be 1 entry node per file.
 
-When I get the chance I'll clean this up a bit, add in some more functions and variables to reduce the amount of code. I'm currently running this every 5 minutes through cron on my server.
+I'm currently running this every 5 minutes through cron on my server. Updates in version 1.1 include using Twilio's PHP library for sending txt messages to make it easier to send updates to multiple phone numbers. It also reduces the reuse of code for connecting to the database and allows updates to be sent when transiting between "Road Closed" and "Travel Not Recommended" statuses.
