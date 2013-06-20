@@ -47,7 +47,7 @@ require "Services/Twilio.php";
     );
 
 // Pull the first entry node from the xml array
-foreach ($feed->{'entry'}[0]->{'content'}->children('xhtml', true)->{'div'}->{'div'} as $conditions) {
+foreach ($feed->{'entry'}->{'content'}->children('xhtml', true)->{'div'}->{'div'} as $conditions) {
 	// Pull the first 4 characters of the condition and find a match
 	$current = substr($conditions,0,4);
 	switch ($current) {
