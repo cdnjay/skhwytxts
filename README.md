@@ -8,7 +8,7 @@ Version 1.1 of this script requires Twilio's PHP library. You can download it he
 
 https://www.twilio.com/docs/libraries
 
-If you prefer using cURL please select version 1.0. The latest version of the cURL executable can be downloaded here:
+If you prefer using cURL please select version 1.0. If you're running a Linux or Mac OS cURL is probably included, if not or if you're running Windows you'll find that the latest version of the cURL executable can be downloaded here:
 
 http://curl.haxx.se/dlwiz/
 
